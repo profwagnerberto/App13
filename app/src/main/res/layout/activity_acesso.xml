@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="8dp"
+  tools:context=".Acesso">
+
+  <TextView
+    android:id="@+id/tvTitulo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="#3F51B5"
+    android:text="@string/TituloDaTelaAcesso"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:textSize="34sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tvGap"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+  <TextView
+    android:id="@+id/tvUsuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/RotuloDoUsuario"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvGap" />
+
+  <EditText
+    android:id="@+id/etUsuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+  <TextView
+    android:id="@+id/tvSenha"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/RotuloDaSenha"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+
+  <EditText
+    android:id="@+id/etSenha"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvSenha" />
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="MostrarPrincipal"
+    android:text="@string/RotuloDoBotaoEntrar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/etSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

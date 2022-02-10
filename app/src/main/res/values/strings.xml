@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">App13</string>
+  <string name="TituloDaTelaPrincipal">Principal</string>
+  <string name="TituloDaTelaAcesso">Acesso</string>
+  <string name="RotuloDoUsuario">Usuário</string>
+  <string name="RotuloDaSenha">Senha</string>
+  <string name="RotuloDoBotaoEntrar">Entrar</string>
+</resources>
